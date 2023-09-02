@@ -5,6 +5,8 @@ Hello, all. This is Pydew Valley. Pydew Valley is a clone of Stardew Valley. Thi
 
 I made this game by following this video: https://www.youtube.com/watch?v=T4IX36sP_0c. 
 
+<img src="https://github.com/tuananohut/pydew_valley/blob/main/graphics/character/down_idle/0.png" width="auto">
+
 ## What Did I Learn From This Project?
 
 - Basic os usage
@@ -22,6 +24,8 @@ I made this game by following this video: https://www.youtube.com/watch?v=T4IX36
 - Basic PyTMX usage
 
 - File and module management.
+
+  <img src="https://github.com/tuananohut/pydew_valley/blob/main/photos-from-the-game/Pydew%20Valley%202.09.2023%2014_45_12.png" width="auto">
 
 ## How To Play?
 
@@ -94,6 +98,6 @@ To start a new day, go to the blue carpet next to the bed and press the Enter ke
 
 - If you don't water the plants, they won't grow. They won't rot either.
 
-<img src="https://github.com/tuananohut/pydew_valley/blob/main/graphics/character/down_idle/0.png" width="auto">
+
 
 

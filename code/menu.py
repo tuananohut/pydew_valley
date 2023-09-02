@@ -10,7 +10,7 @@ class Menu:
         self.player = player
         self.toggle_menu = toggle_menu
         self.display_surface = pygame.display.get_surface()
-        self.font = pygame.font.Font("C:/Users/tuana/Desktop/PYTHON_PROJELER/pydew_valley/font/LycheeSoda.ttf", 30)
+        self.font = pygame.font.Font("pydew_valley/font/LycheeSoda.ttf", 30)
 
         # options
         self.width = 400        

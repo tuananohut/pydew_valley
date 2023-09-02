@@ -31,7 +31,7 @@ class Plant(pygame.sprite.Sprite):
         
         # self
         self.plant_type = plant_type
-        self.frames = import_folder(f'C:/Users/tuana/Desktop/PYTHON_PROJELER/pydew_valley/graphics/fruit/{plant_type}')
+        self.frames = import_folder(f'pydew_valley/graphics/fruit/{plant_type}')
         self.soil = soil
         self.check_watered = check_watered
 
@@ -76,8 +76,8 @@ class SoilLayer:
         self.plant_sprites = pygame.sprite.Group()
 
         # graphics
-        self.soil_surfs = import_folder_dict("C:/Users/tuana/Desktop/PYTHON_PROJELER/pydew_valley/graphics/soil/")
-        self.water_surfs = import_folder('C:/Users/tuana/Desktop/PYTHON_PROJELER/pydew_valley/graphics/soil_water')
+        self.soil_surfs = import_folder_dict("pydew_valley/graphics/soil/")
+        self.water_surfs = import_folder('pydew_valley/graphics/soil_water')
 
         # requirements
         # if the area is farmable
@@ -89,7 +89,7 @@ class SoilLayer:
         self.plant = False
 
         # sounds
-        self.hoe_sound = pygame.mixer.Sound("C:/Users/tuana/Desktop/PYTHON_PROJELER/pydew_valley/audio/hoe.wav")
+        self.hoe_sound = pygame.mixer.Sound("pydew_valley/audio/hoe.wav")
         self.hoe_sound.set_volume(0.01)
 
         self.plant_sound = pygame.mixer.Sound("pydew_valley/audio/plant.mp3")
@@ -97,11 +97,11 @@ class SoilLayer:
 
 
     def create_soil_grid(self):
-        ground = pygame.image.load('C:/Users/tuana/Desktop/PYTHON_PROJELER/pydew_valley/graphics/world/ground.png')
+        ground = pygame.image.load('pydew_valley/graphics/world/ground.png')
         h_tiles, v_tiles = ground.get_width() // TILE_SIZE, ground.get_height() // TILE_SIZE
         
         self.grid = [[ [] for col in range(h_tiles)] for row in range(v_tiles)]
-        for x, y, surf in load_pygame('C:/Users/tuana/Desktop/PYTHON_PROJELER/pydew_valley/data/map.tmx').get_layer_by_name('Farmable').tiles():
+        for x, y, surf in load_pygame('pydew_valley/data/map.tmx').get_layer_by_name('Farmable').tiles():
             self.grid[y][x].append('F')
 
 

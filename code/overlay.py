@@ -10,7 +10,7 @@ class Overlay:
         self.player = player
 
         # imports
-        overlay_path = "C:/Users/tuana/Desktop/PYTHON_PROJELER/pydew_valley/graphics/overlay"
+        overlay_path = "pydew_valley/graphics/overlay"
         self.tools_surf = {tool: pygame.image.load(f"{overlay_path}/{tool}.png").convert_alpha() for tool in player.tools}
         self.seeds_surf = {seed: pygame.image.load(f"{overlay_path}/{seed}.png").convert_alpha() for seed in player.seeds}
         # print(self.tools_surf)

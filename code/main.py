@@ -41,7 +41,7 @@ class Game:
         self.is_running = True
 
     def run(self):
-        start_button = StartButton(SCREEN_WIDTH // 2 - 100, SCREEN_HEIGHT // 2 - 50, 200, 100, "Başlat", self.start_game)
+        start_button = StartButton(SCREEN_WIDTH // 2 - 100, SCREEN_HEIGHT // 2 - 50, 200, 100, "Start", self.start_game)
         
         while True:
             for event in pygame.event.get():

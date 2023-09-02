@@ -3,6 +3,9 @@
 
 Hello, all. This is Pydew Valley. Pydew Valley is a clone of Stardew Valley. This game is a type of farming simulation.
 
+Asset pack: https://cupnooble.itch.io/sprout-lands-asset-pack
+
+
 I made this game by following this video: https://www.youtube.com/watch?v=T4IX36sP_0c. 
 
 <img src="https://github.com/tuananohut/pydew_valley/blob/main/graphics/character/down_idle/0.png" width="auto">

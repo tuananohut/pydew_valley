@@ -41,7 +41,7 @@ class Level:
 		self.shop_active = False
 
 		# music
-		self.success = pygame.mixer.Sound("C:/Users/tuana/Desktop/PYTHON_PROJELER/pydew_valley/audio/success.wav")
+		self.success = pygame.mixer.Sound("pydew_valley/audio/success.wav")
 		self.success.set_volume(0.01)
 		self.music_bg = pygame.mixer.Sound("pydew_valley/audio/bg.mp3")
 		self.music_bg.play(loops = -1)
@@ -49,7 +49,7 @@ class Level:
 
 	
 	def setup(self):
-		tmx_data = load_pygame("C:/Users/tuana/Desktop/PYTHON_PROJELER/pydew_valley/data/map.tmx")
+		tmx_data = load_pygame("pydew_valley/data/map.tmx")
 		
 		# house
 		for layer in ["HouseFloor", "HouseFurnitureBottom"]:
@@ -65,7 +65,7 @@ class Level:
 			Generic((x * TILE_SIZE, y * TILE_SIZE), surf, [self.all_sprites, self.collision_sprites])
 
 		# water
-		water_frames = import_folder("C:/Users/tuana/Desktop/PYTHON_PROJELER/pydew_valley/graphics/water")
+		water_frames = import_folder("pydew_valley/graphics/water")
 		for x, y, surf in tmx_data.get_layer_by_name('Water').tiles():
 			Water((x * TILE_SIZE, y * TILE_SIZE), water_frames, self.all_sprites)
 
@@ -93,7 +93,7 @@ class Level:
 				Interaction((obj.x, obj.y), (obj.width, obj.height), self.interaction_sprites, obj.name)
 
 		Generic((0, 0),
-	  	 		pygame.image.load("C:/Users/tuana/Desktop/PYTHON_PROJELER/pydew_valley/graphics/world/ground.png").convert_alpha(),
+	  	 		pygame.image.load("pydew_valley/graphics/world/ground.png").convert_alpha(),
 				groups = self.all_sprites,
 				z = LAYERS['ground'])
 		

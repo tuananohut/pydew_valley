@@ -41,15 +41,15 @@ class Level:
 		self.shop_active = False
 
 		# music
-		self.success = pygame.mixer.Sound("../pydew_valley-main/audio/success.wav")
+		self.success = pygame.mixer.Sound("../audio/success.wav")
 		self.success.set_volume(0.01)
-		self.music_bg = pygame.mixer.Sound("../pydew_valley-main/audio/bg.mp3")
+		self.music_bg = pygame.mixer.Sound("../audio/bg.mp3")
 		self.music_bg.play(loops = -1)
 		self.music_bg.set_volume(0.01)
 
 	
 	def setup(self):
-		tmx_data = load_pygame("../pydew_valley-main/data/map.tmx")
+		tmx_data = load_pygame("../data/map.tmx")
 		
 		# house
 		for layer in ["HouseFloor", "HouseFurnitureBottom"]:
@@ -65,7 +65,7 @@ class Level:
 			Generic((x * TILE_SIZE, y * TILE_SIZE), surf, [self.all_sprites, self.collision_sprites])
 
 		# water
-		water_frames = import_folder("../pydew_valley-main/graphics/water")
+		water_frames = import_folder("../graphics/water")
 		for x, y, surf in tmx_data.get_layer_by_name('Water').tiles():
 			Water((x * TILE_SIZE, y * TILE_SIZE), water_frames, self.all_sprites)
 
@@ -93,7 +93,7 @@ class Level:
 				Interaction((obj.x, obj.y), (obj.width, obj.height), self.interaction_sprites, obj.name)
 
 		Generic((0, 0),
-	  	 		pygame.image.load("../pydew_valley-main/graphics/world/ground.png").convert_alpha(),
+	  	 		pygame.image.load("../graphics/world/ground.png").convert_alpha(),
 				groups = self.all_sprites,
 				z = LAYERS['ground'])
 		

@@ -1,12 +1,12 @@
 from random import randint
 
 import pygame 
+from pytmx.util_pygame import load_pygame
 
 from settings import *
 from player import Player
 from overlay import Overlay
 from sprites import Generic, Water, WildFlower, Tree, Interaction, Particle
-from pytmx.util_pygame import load_pygame
 from support import *
 from transition import Transition
 from soil import SoilLayer

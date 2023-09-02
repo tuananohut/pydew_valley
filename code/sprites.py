@@ -86,11 +86,11 @@ class Tree(Generic):
         # tree attributes
         self.health = 5
         self.alive = True
-        self.stump_path = f'pydew_valley/graphics/stumps/{"small" if name == "Small" else "large"}.png'
+        self.stump_path = f'graphics/stumps/{"small" if name == "Small" else "large"}.png'
         self.stump_surf = pygame.image.load(self.stump_path).convert_alpha()
 
         # apples
-        self.apples_surf = pygame.image.load("pydew_valley/graphics/fruit/apple.png")
+        self.apples_surf = pygame.image.load("graphics/fruit/apple.png")
         self.apple_pos = APPLE_POS[name]
         self.apple_sprites = pygame.sprite.Group()
         self.create_fruit()
@@ -98,7 +98,7 @@ class Tree(Generic):
         self.player_add = player_add
 
         # sounds
-        self.axe_sound = pygame.mixer.Sound("pydew_valley/audio/axe.mp3")
+        self.axe_sound = pygame.mixer.Sound("audio/axe.mp3")
 
 
     def damage(self):

@@ -82,6 +82,8 @@ To start a new day, go to the blue carpet next to the bed and press the Enter ke
 
 - List index out of range
 
+<img src = "https://github.com/tuananohut/pydew_valley/blob/main/photos-from-the-game/Pydew%20Valley%202.09.2023%2014_45_29.png" width = "auto">
+
 ### General Info About The Game
 
 - There's no water bar; you can water as much as you like.

@@ -59,6 +59,8 @@ To start a new day, go to the blue carpet next to the bed and press the Enter ke
 
 ## What Did I Change?
 
+- I add Start button.
+
 - I changed the order of adding libraries. I organized them as follows: 
                 
         Python libraries, 
@@ -87,5 +89,7 @@ To start a new day, go to the blue carpet next to the bed and press the Enter ke
 - Cut trees do not regrow, and you cannot plant new trees. If you pick apples, they will grow again the next day.
 
 - You can't step on plants when they grow a bit. Sometimes, this can be quite frustrating.
+
+- If you don't water the plants, they won't grow. They won't rot either.
 
 

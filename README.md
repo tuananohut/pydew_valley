@@ -92,6 +92,6 @@ To start a new day, go to the blue carpet next to the bed and press the Enter ke
 
 - If you don't water the plants, they won't grow. They won't rot either.
 
-<img src="https://github.com/tuananohut/pydew_valley/blob/main/graphics/character/down_idle/0.png)https://github.com/tuananohut/pydew_valley/blob/main/graphics/character/down_idle/0.png" width="auto">
+<img src="https://github.com/tuananohut/pydew_valley/blob/main/graphics/character/down_idle/0.png" width="auto">
 
 

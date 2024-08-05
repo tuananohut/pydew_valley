@@ -66,15 +66,7 @@ To start a new day, go to the blue carpet next to the bed and press the Enter ke
 
 ## What Did I Change?
 
-- I add Start button.
-
-- I changed the order of adding libraries. I organized them as follows: 
-                
-        Python libraries, 
-        downloaded libraries from the internet,                
-        my own custom libraries.
-
-- If I've created two classes in one file, I've left 3 spaces in between. I left 2 spaces between functions. I did this to make the code more readable.
+- I add home page.
 
 - I changed UI a little bit. Because it was a bit complex.
 
